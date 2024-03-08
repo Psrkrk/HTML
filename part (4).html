@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        .main{
+            width: 1000px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<!-- for loop in django-->
+
+
+<!-- {% for n in clist %}
+<! <div-{{forloop.counter}}{{n}}</div-->
+<!-- <div-{{forloop.counter0}}{{n}}</div-->
+<!-- <div-{{forloop.revcounter}}{{n}}</div-->
+<!-- <div-{{forloop.revcounter0}}{{n}}</div-->
+   <!--<div>{{forloop.first}}{{n}}</div>-->
+   <!-- <div-{{forloop.last}}{{n}}</div-->
+
+
+<!--for dictionary fatching syntax-->
+
+<table border="1", cellpadding="10px">
+    <tr>
+        <th>name</th>
+        <th>phone-no</th>
+    </tr>
+
+<!--this is also for loop -->
+    {% for d in student_details%}
+    <tr>
+        <td>{{d.name}}</td>
+        <td>{{d.phone}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<!--{% for n in numbers %}
+
+{{n}}
+
+{% {% if n > 2 %}
+
+<div>{{r}}</div>
+
+{% endif %}
+
+{% endfor %}-->
+
+</body>
+</html>
+
+<!--NOTE :key should be same as views file like name is key in the file views
